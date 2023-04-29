@@ -3,45 +3,63 @@ import React from 'react'
 export default function Navbar(props) {
   return (
     <>
-        <div>
+        <div className='bg-body-tertiary d-flex justify-content-evenly'>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">{props.title}</a>
+                <a className="navbar-brand " href="/">{props.title}</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/"></a>
-                        </li>
-                        <li className="nav-item mx-3 border">
-                            <a className="nav-link --bs-dark-border-subtle "  href="/"></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/"></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/"></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/"></a>
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle1}</button></a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="www.google.com">
-                        <button type="button" className="btn btn-danger">{props.sbTitle2}</button>
-
-                            </a>
+                            <button type="button" className="btn btn-secondary">{props.sbTitle2}</button></a>
                         </li>
-                        <button type="button" className="btn btn-primary">Primary</button>
-                        <button type="button" className="btn btn-secondary">Secondary</button>
-                        <button type="button" className="btn btn-success">Success</button>
-                        <button type="button" className="btn btn-warning">{props.sbTitle3}</button>
-                        <button type="button" className="btn btn-info">{props.sbTitle4}</button>
-                        <button type="button" className="btn btn-light">{props.sbTitle5}</button>
-                        <button type="button" className="btn btn-dark">{props.sbTitle6}</button>
-
-                        <button type="button" className="btn btn-link">Link</button>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle3}</button></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle4}</button></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle5}</button></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle6}</button></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle7}</button></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle8}</button></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle9}</button></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle10}</button></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle11}</button></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="www.google.com">
+                            <button type="button" className="btn btn-secondary">{props.sbTitle12}</button></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -49,4 +67,21 @@ export default function Navbar(props) {
     </div>
     </>
   )
+}
+
+
+Navbar.defaultProps = {
+    title: "Enter Title Of Page",
+    sbTitle1: "Update",
+    sbTitle2: "Update",
+    sbTitle3: "Update",
+    sbTitle4: "Update",
+    sbTitle5: "Update",
+    sbTitle6: "Update",
+    sbTitle7: "Update",
+    sbTitle8: "Update",
+    sbTitle9: "Update",
+    sbTitle10: "Update",
+    sbTitle11: "Update",
+    sbTitle12: "Update",
 }
