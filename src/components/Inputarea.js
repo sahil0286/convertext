@@ -36,6 +36,32 @@ export default function Inputarea(props) {
     setText(result);
   }
 
+  const inTxt=()=> {
+    var result = "";
+  for (var i = 0; i < text.length; i++) {
+    var char = text.charAt(i);
+    if (char === char.toUpperCase()) {
+      result += char.toLowerCase();
+    } else {
+      result += char.toUpperCase();
+    }
+  }
+    setText(result);
+  }
+
+  const clrText=()=> {
+    setText("");
+  }
+
+  const copyTxt=()=> {
+    var input = document.createElement("input");
+    input.setAttribute("value", text);
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy");
+    document.body.removeChild(input);
+  }
+
     return (
     <div className='container mt-2'>
         <h3>{props.inpHeading}</h3>
@@ -49,6 +75,11 @@ export default function Inputarea(props) {
                 <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={senTxt}>Sentence Case</button>
                 <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={capTxt}>Capitalize Case</button>
                 <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={alTxt}>aLtErNaTiNg cAsE</button>
+                <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={inTxt}>InVeRsE CaSe</button>
+                {/* <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={titTxt}>Title Case</button> */}
+                {/* <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={downTxt}>Download Text</button> */}
+                <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={copyTxt}>Copy to Clipboard</button>
+                <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={clrText}>Clear </button>
         </div>
         {/* <p>`Character Count: ${charCnt} | Word Count: ${wordCnt} | Line Count: ${lineCnt}`</p> */}
         <p className='container text-center mt-2'>Copyright ©2023-2030 converText Ltd | Concept by <a href="/">Sahil Fakir</a> | <a href="/">Privacy Policy</a> | <a href="/">Terms of Use</a> | <a href="/">Sitemap</a> | <a href="/">About</a> </p>
