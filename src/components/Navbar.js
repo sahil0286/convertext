@@ -3,6 +3,7 @@ import React from 'react'
 export default function Navbar() {
   return (
     <>
+        <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">converText</a>
@@ -15,7 +16,7 @@ export default function Navbar() {
                             <a className="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link "  href="/">Home</a>
+                            <a className="nav-link --bs-dark-border-subtle "  href="/">Home</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/">Link</a>
@@ -24,6 +25,7 @@ export default function Navbar() {
                 </div>
             </div>
         </nav>
+    </div>
     </>
   )
 }
