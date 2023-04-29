@@ -3,8 +3,8 @@ import React from 'react'
 export default function Navbar(props) {
   return (
     <>
-        <div className='bg-body-tertiary d-flex justify-content-evenly'>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className='continer'>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-evenly">
             <div className="container-fluid">
                 <a className="navbar-brand " href="/">{props.title}</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,11 +63,17 @@ export default function Navbar(props) {
                     </ul>
                     <div className="form-check form-switch">
                         <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-                        <label className="form-check-label" for="flexSwitchCheckDefault">Mode</label>
+                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Mode</label>
                     </div>
                 </div>
             </div>
         </nav>
+    </div>
+    <div className='container'>
+        <div className="mb-3">
+        <label htmlFor="exampleFormControlTextarea1" className="form-label">Example textarea</label>
+        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
     </div>
     </>
   )
