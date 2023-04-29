@@ -46,7 +46,7 @@ export default function Inputarea(props) {
         <div className='container'>
                 <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={upperTxt}>Upper Case</button>
                 <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={lowerTxt}>Lower Case</button>
-            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={senTxt}>Sentence Case</button>
+                <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={senTxt}>Sentence Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={capTxt}>Capitalize Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={alTxt}>aLtErNaTiNg cAsE</button>
         </div>
