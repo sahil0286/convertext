@@ -62,6 +62,12 @@ export default function Inputarea(props) {
     document.body.removeChild(input);
   }
 
+//   const titTxt=()=> {
+//     setText(text.replace(/\w\S*/g, function(txt) {
+//         return txt.charAt(0).toUpperCase() + txt.subtext(1).toLowerCase();
+//       }))
+//   }
+
     return (
     <div className='container mt-2'>
         <h3>{props.inpHeading}</h3>
