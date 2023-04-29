@@ -75,7 +75,7 @@ export default function Inputarea(props) {
                 <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={senTxt}>Sentence Case</button>
                 <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={capTxt}>Capitalize Case</button>
                 <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={alTxt}>aLtErNaTiNg cAsE</button>
-                <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={inTxt}>InVeRsE CaSe</button>
+            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={inTxt}>InVeRsE CaSe</button>
                 {/* <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={titTxt}>Title Case</button> */}
                 {/* <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={downTxt}>Download Text</button> */}
                 <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={copyTxt}>Copy to Clipboard</button>
