@@ -61,6 +61,10 @@ export default function Navbar(props) {
                             <button type="button" className="btn btn-secondary">{props.sbTitle12}</button></a>
                         </li>
                     </ul>
+                    <div className="form-check form-switch">
+                        <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+                        <label className="form-check-label" for="flexSwitchCheckDefault">Switch</label>
+                    </div>
                 </div>
             </div>
         </nav>
