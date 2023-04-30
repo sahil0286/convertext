@@ -2,9 +2,6 @@ import React ,{useState} from 'react'
 
 export default function Inputarea(props) {
   const [text, setText] = useState("")
-  // const [wordCnt, setWordCnt] = useState(0)
-  // const [charCnt, setCharCnt] = useState(0)
-  // const [lineCnt, setLineCnt] = useState(0)
 
   const textBox=(event)=>
   {
