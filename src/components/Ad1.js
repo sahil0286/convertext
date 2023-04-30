@@ -16,7 +16,6 @@ export default function Ad1(props) {
                     <h5 className="card-title">AD</h5>
                 </div>
             </a>
-
         </div>
     </>
   )

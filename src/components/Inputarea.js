@@ -104,7 +104,6 @@ export default function Inputarea(props) {
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={clrText}>Clear </button>
         </div>
         <p>Character Count: {text.length} | Word Count: {text.split(/\s+/).filter(word => word !== '').length} | Line Count: {text.split(/\r\n|\r|\n/).length}</p>
-        <p className='container text-center mt-2'>Copyright ©2023-2030 converText Ltd | Concept by <a href="/">Sahil Fakir</a> | <a href="/">Privacy Policy</a> | <a href="/">Terms of Use</a> | <a href="/">Sitemap</a> | <a href="/">About</a> </p>
     </div>
   )
 }
