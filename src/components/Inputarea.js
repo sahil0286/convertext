@@ -2,7 +2,7 @@ import React ,{useState} from 'react'
 
 export default function Inputarea(props) {
   const [text, setText] = useState("")
-  
+
   const textBox=(event)=>
   {
     setText(event.target.value)
@@ -71,6 +71,18 @@ export default function Inputarea(props) {
       }
     }));
   }
+  const downTxt=()=> {
+    const element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', "converText.txt");
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+  }
 
     return (
     <div className='container mt-2'>
@@ -86,13 +98,12 @@ export default function Inputarea(props) {
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={capTxt}>Capitalize Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={alTxt}>aLtErNaTiNg cAsE</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={inTxt}>InVeRsE CaSe</button>
-                <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={titTxt}>Title Case</button>
-                {/* <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={downTxt}>Download Text</button> */}
+            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={titTxt}>Title Case</button>
+            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={downTxt}>Download Text</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={copyTxt}>Copy to Clipboard</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={clrText}>Clear </button>
         </div>
-        {/* <p>`Character Count: ${charCnt} | Word Count: ${wordCnt} | Line Count: ${lineCnt}`</p> */}
-        <p className='container text-center mt-2'>Copyright ©2023-2030 converText Ltd | Concept by <a href="/">Sahil Fakir</a> | <a href="/">Privacy Policy</a> | <a href="/">Terms of Use</a> | <a href="/">Sitemap</a> | <a href="/">About</a> </p>
+        <p>Character Count: {text.length} | Word Count: {text.split(/\s+/).filter(word => word !== '').length} | Line Count: {text.split(/\r\n|\r|\n/).length}</p>
     </div>
   )
 }
