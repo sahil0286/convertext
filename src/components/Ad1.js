@@ -11,6 +11,8 @@ export default function Ad1(props) {
                 </div>
             </a>
         </div>
+        <div className='container my-2' style={{height:"250px"}}>
+        </div>
         <div className='container my-2'>
             <a href="https://teamseas.org/" className=' card rounded float-end'>
                 <img style={{height:"250px"}} src={props.ad2} className="rounded" alt="Ad_No_2"/>
