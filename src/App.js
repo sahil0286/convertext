@@ -1,4 +1,5 @@
 import './App.css';
+import A from './components/A';
 import Ad1 from './components/Ad1';
 import Footer from './components/Footer';
 import Inputarea from './components/Inputarea';
@@ -21,6 +22,9 @@ function App() {
           <Switch>
             <Route path="/newcoding">
               <NewCoding/>
+            </Route>
+            <Route path="/a">
+              <A></A>
             </Route>
           </Switch>
     </Router>
