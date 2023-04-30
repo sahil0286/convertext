@@ -42,6 +42,7 @@ export default function Navbar(props) {
 }
 
 
+
 Navbar.defaultProps = {
     title: "Enter Title Of Page",
     sbTitle1: "Update",
