@@ -22,3 +22,8 @@ export default function Ad1(props) {
     </>
   )
 }
+
+Ad1.defaultProps = {
+    ad1:"Update AD Image 1",
+    ad2:"Update AD Image 2",
+}
