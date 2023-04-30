@@ -1,6 +1,5 @@
 import React from 'react'
-import {
-    BrowserRouter as  Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export default function Navbar(props) {
   return (
@@ -15,10 +14,10 @@ export default function Navbar(props) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/NewCoding">{props.sbTitle1}</Link>
+                            <Link className='nav-link' href="/newcoding">{props.sbTitle1}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">{props.sbTitle2}</Link>
+                            <Link className="nav-link" to="/a">{props.sbTitle2}</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">{props.sbTitle3}</Link>
@@ -41,6 +40,7 @@ export default function Navbar(props) {
     </>
   )
 }
+
 
 
 Navbar.defaultProps = {

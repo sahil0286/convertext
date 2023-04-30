@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function NewCoding() {
+export default function A() {
   return (
     <>
-        <p>Hi </p>
+      <p>asdas</p>
     </>
   )
 }
