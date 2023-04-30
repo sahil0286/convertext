@@ -62,18 +62,22 @@ export default function Inputarea(props) {
     document.body.removeChild(input);
   }
 
-//   const titTxt=()=> {
-//     setText(text.replace(/\w\S*/g, function(txt) {
-//         return txt.charAt(0).toUpperCase() + txt.subtext(1).toLowerCase();
-//       }))
-//   }
+  const titTxt=()=> {
+    setText(text.replace(/\w\S*/g, function(txt){
+      if(['a', 'an', 'the', 'and', 'in', 'on'].includes(txt.toLowerCase())){
+        return txt.toLowerCase();
+      }else{
+        return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
+      }
+    }));
+  }
 
     return (
     <div className='container mt-2'>
         <h3>{props.inpHeading}</h3>
         <div className="mb-3">
             <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.inpSubHeading}</label>
-            <textarea className="form-control" value={text} onChange={textBox} id="text" rows="8"></textarea>
+            <textarea className="form-control" value={text} onChange={textBox} id="text" rows="8" placeholder='Type or paste your content here'></textarea>
         </div>
         <div className='container'>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={upperTxt}>Upper Case</button>
@@ -82,7 +86,7 @@ export default function Inputarea(props) {
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={capTxt}>Capitalize Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={alTxt}>aLtErNaTiNg cAsE</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={inTxt}>InVeRsE CaSe</button>
-                {/* <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={titTxt}>Title Case</button> */}
+                <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={titTxt}>Title Case</button>
                 {/* <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={downTxt}>Download Text</button> */}
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={copyTxt}>Copy to Clipboard</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={clrText}>Clear </button>
