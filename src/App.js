@@ -3,12 +3,12 @@ import Ad1 from './components/Ad1';
 import Footer from './components/Footer';
 import Inputarea from './components/Inputarea';
 import Navbar from './components/Navbar';
+import NewCoding from './components/NewCoding';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import NewCoding from './components/NewCoding';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Footer/>
           <Switch>
             <Route path="/NewCoding">
-              <NewCoding />
+              <NewCoding/>
             </Route>
           </Switch>
     </Router>
