@@ -16,9 +16,14 @@ export default function Ad1(props) {
                     <h5 className="card-title">AD</h5>
                 </div>
             </a>
-        </div>
         <div className='container my-2' style={{height:"250px"}}>
+        </div>
         </div>
     </>
   )
+}
+
+Ad1.defaultProps = {
+    ad1:"Update AD Image 1",
+    ad2:"Update AD Image 2",
 }
