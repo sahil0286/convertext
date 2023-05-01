@@ -24,17 +24,6 @@ export default function Inputarea(props) {
         return word.charAt(0).toUpperCase() + word.slice(1);
       }).join(' '));
   }
-  const alTxt=()=> {
-    var result = "";
-  for (var i = 0; i < text.length; i++) {
-    if (i % 2 === 0) {
-      result += text.charAt(i).toUpperCase();
-    } else {
-      result += text.charAt(i).toLowerCase();
-    }
-  }
-    setText(result);
-  }
 
   const inTxt=()=> {
     var result = "";
@@ -92,12 +81,11 @@ export default function Inputarea(props) {
             <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.inpSubHeading}</label>
             <textarea className="form-control" value={text} onChange={textBox} id="text" rows="8" placeholder='Type or paste your content here'></textarea>
         </div>
-        <div className='container my-2'>
+        <div className='container text-center my-2'>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={upperTxt}>Upper Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={lowerTxt}>Lower Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={senTxt}>Sentence Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={capTxt}>Capitalize Case</button>
-            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={alTxt}>aLtErNaTiNg cAsE</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={inTxt}>InVeRsE CaSe</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={titTxt}>Title Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={downTxt}>Download Text</button>

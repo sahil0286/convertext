@@ -7,6 +7,7 @@ import Reverse from './components/Reverse';
 import Navbar from './components/Navbar';
 import Morsecode from './components/Morsecode';
 import Binary from './components/Binary';
+import Alternating from './components/Alternating';
 
 function App() {
   return (
@@ -49,7 +50,7 @@ function App() {
           <Route path='/alternating' element=
           {
             <div>
-              <Binary inpHeading="Alternating Case" inpSubHeading="The alternating case converter will allow you to transform your text (no matter the current format) into text that alternates between lower case and upper case. It will generate a capital letter and then a lower case letter within the same word." btName="Alternating Text Convert" />
+              <Alternating inpHeading="Alternating Case" inpSubHeading="The alternating case converter will allow you to transform your text (no matter the current format) into text that alternates between lower case and upper case. It will generate a capital letter and then a lower case letter within the same word." btName="Alternating Text Convert" />
               <Ad1 ad1="https://global-uploads.webflow.com/5f6cc9cd16d59d990c8fca33/61d30ac833d72078f141fb47_team-seas-raised-30-million-come-back.jpg" ad2="https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2022/01/rsz_191026-theoceancleanup_malaysia-1099294.jpg"/>
               <Footer/>
             </div>
