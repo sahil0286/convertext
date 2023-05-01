@@ -61,16 +61,7 @@ export default function Inputarea(props) {
     document.execCommand("copy");
     document.body.removeChild(input);
   }
-
-  const titTxt=()=> {
-    setText(text.replace(/\w\S*/g, function(txt){
-      if(['a', 'an', 'the', 'and', 'in', 'on'].includes(txt.toLowerCase())){
-        return txt.toLowerCase();
-      }else{
-        return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
-      }
-    }));
-  }
+  
   const downTxt=()=> {
     const element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -82,6 +73,15 @@ export default function Inputarea(props) {
     element.click();
 
     document.body.removeChild(element);
+  }
+  const titTxt=()=> {
+    setText(text.replace(/\w\S*/g, function(txt){
+      if(['a', 'an', 'the', 'and', 'in', 'on'].includes(txt.toLowerCase())){
+        return txt.toLowerCase();
+      }else{
+        return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
+      }
+    }));
   }
 
     return (
@@ -103,7 +103,7 @@ export default function Inputarea(props) {
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={copyTxt}>Copy to Clipboard</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={clrText}>Clear </button>
         </div>
-        <p>Character Count: {text.length} | Word Count: {text.split(/\s+/).filter(word => word !== '').length} | Line Count: {text.split(/\r\n|\r|\n/).length}</p>
+        <h5>Character Count: {text.length} | Word Count: {text.split(/\s+/).filter(word => word !== '').length} | Line Count: {text.split(/\r\n|\r|\n/).length}</h5>
     </div>
   )
 }
