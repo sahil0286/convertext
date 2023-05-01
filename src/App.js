@@ -8,11 +8,12 @@ import Navbar from './components/Navbar';
 import Morsecode from './components/Morsecode';
 import Binary from './components/Binary';
 import Alternating from './components/Alternating';
+import Freenotepad from './components/Freenotepad';
 
 function App() {
   return (
     <>
-        <Navbar title="converText" sbTitle1="Reverse Text Generator" sbTitle2="Morse Code Translator" sbTitle3="Binary Code Translator" sbTitle4="Alternating Case"/>
+        <Navbar title="converText" sbTitle1="Reverse Text Generator" sbTitle2="Morse Code Translator" sbTitle3="Binary Code Translator" sbTitle4="Alternating Case" sbTitle5="Online Notepad"/>
         <Routes>
           <Route path='/' element=
           {
@@ -51,6 +52,14 @@ function App() {
           {
             <div>
               <Alternating inpHeading="Alternating Case" inpSubHeading="The alternating case converter will allow you to transform your text (no matter the current format) into text that alternates between lower case and upper case. It will generate a capital letter and then a lower case letter within the same word." btName="Alternating Text Convert" />
+              <Ad1 ad1="https://global-uploads.webflow.com/5f6cc9cd16d59d990c8fca33/61d30ac833d72078f141fb47_team-seas-raised-30-million-come-back.jpg" ad2="https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2022/01/rsz_191026-theoceancleanup_malaysia-1099294.jpg"/>
+              <Footer/>
+            </div>
+          }/>
+          <Route path='/freenotepad' element=
+          {
+            <div>
+              <Freenotepad inpHeading="Free Online Notepad" inpSubHeading="Use the free quick online notepad by simply entering your text and notes. The way this online notepad works, it will ensure that it is saved by the browser that you are operating on."/>
               <Ad1 ad1="https://global-uploads.webflow.com/5f6cc9cd16d59d990c8fca33/61d30ac833d72078f141fb47_team-seas-raised-30-million-come-back.jpg" ad2="https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2022/01/rsz_191026-theoceancleanup_malaysia-1099294.jpg"/>
               <Footer/>
             </div>

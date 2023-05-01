@@ -26,7 +26,7 @@ export default function Navbar(props) {
                             <Link className="nav-link mx-1.5" to="/alternating">{props.sbTitle4}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link mx-1.5" to="/">{props.sbTitle5}</Link>
+                            <Link className="nav-link mx-1.5" to="/freenotepad">{props.sbTitle5}</Link>
                         </li>
                     </ul>
                     <div className="form-check form-switch">
