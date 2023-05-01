@@ -29,7 +29,7 @@ function App() {
             </div>
 
           }/>
-          <Route path='/smalltextgenerator' element=
+          <Route path='/Upsidedown' element=
           {
             <div>
               <Upsidedown inpHeading="Backwards Text Generator" inpSubHeading="Normal front facing text to backwards text. A simple online backward text generator tool that allows you to switch the way your text is facing. Simply write or paste the text in the left column and see it get converted in the right." btName="Convert Text Upside Down" />
