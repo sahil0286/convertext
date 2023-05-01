@@ -74,6 +74,7 @@ export default function Inputarea(props) {
 
     document.body.removeChild(element);
   }
+  
   const titTxt=()=> {
     setText(text.replace(/\w\S*/g, function(txt){
       if(['a', 'an', 'the', 'and', 'in', 'on'].includes(txt.toLowerCase())){
