@@ -13,19 +13,22 @@ import { useState } from 'react';
 
 function App() {
   const [mode, setMode] = useState("light")
+  const [tcolor, setTcolor] = useState("black")
 
   const togglemode=()=>{
     if(mode==="light"){
-      setMode("dark")
+      setMode("secondary")
+      setTcolor("white")
     }
     else{
       setMode("light")
+      setTcolor("black")
     }
   }
 
   return (
     <>
-        <Navbar title="converText" mode={mode} togglemode={togglemode} sbTitle1="Reverse Text Generator" sbTitle2="Morse Code Translator" sbTitle3="Binary Code Translator" sbTitle4="Alternating Case" sbTitle5="Online Notepad"/>
+        <Navbar title="converText" mode={mode} tcolor={tcolor} togglemode={togglemode} sbTitle1="Reverse Text Generator" sbTitle2="Morse Code Translator" sbTitle3="Binary Code Translator" sbTitle4="Alternating Case" sbTitle5="Online Notepad"/>
         <Routes>
           <Route path='/' element=
           {

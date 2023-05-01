@@ -5,28 +5,28 @@ export default function Navbar(props) {
   return (
     <>
         <div className='continer'>
-            <nav className={`navbar navbar-expand-lg bg-${props.mode} d-flex justify-content-evenly`}>
-            <div className="container-fluid">
-                <Link className="navbar-brand " to="/">{props.title}</Link>
+            <nav className={`navbar navbar-expand-lg bg-${props.mode} ${props.mode}  d-flex justify-content-evenly`} style={{color:`${props.tcolor}`}} >
+            <div className="container-fluid " >
+                <Link className="navbar-brand " style={{color:`${props.tcolor}`}} to="/">{props.title}</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item mx-2">
-                            <Link className='nav-link' to="/smalltextgenerator">{props.sbTitle1}</Link>
+                            <Link className='nav-link' to="/smalltextgenerator" style={{color:`${props.tcolor}`}}>{props.sbTitle1}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link mx-1.5" to="/morsecode">{props.sbTitle2}</Link>
+                            <Link className="nav-link mx-1.5" to="/morsecode" style={{color:`${props.tcolor}`}}>{props.sbTitle2}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link mx-1.5" to="/binary">{props.sbTitle3}</Link>
+                            <Link className="nav-link mx-1.5" to="/binary" style={{color:`${props.tcolor}`}}>{props.sbTitle3}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link mx-1.5" to="/alternating">{props.sbTitle4}</Link>
+                            <Link className="nav-link mx-1.5" to="/alternating" style={{color:`${props.tcolor}`}}>{props.sbTitle4}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link mx-1.5" to="/freenotepad">{props.sbTitle5}</Link>
+                            <Link className="nav-link mx-1.5" to="/freenotepad" style={{color:`${props.tcolor}`}}>{props.sbTitle5}</Link>
                         </li>
                     </ul>
                     <div className="form-check form-switch">
