@@ -46,7 +46,7 @@ export default function Inputarea(props) {
             <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.inpSubHeading}</label>
             <textarea className="form-control" value={text} onChange={textBox} id="text" rows="8" placeholder='Type or paste your content here'></textarea>
         </div>
-        <div className='container text-center'>
+        <div className='container text-center my-2'>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={upperTxt}>{props.btName}</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={downTxt}>Download Text</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={copyTxt}>Copy to Clipboard</button>

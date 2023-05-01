@@ -74,7 +74,7 @@ export default function Inputarea(props) {
 
     document.body.removeChild(element);
   }
-  
+
   const titTxt=()=> {
     setText(text.replace(/\w\S*/g, function(txt){
       if(['a', 'an', 'the', 'and', 'in', 'on'].includes(txt.toLowerCase())){
@@ -92,7 +92,7 @@ export default function Inputarea(props) {
             <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.inpSubHeading}</label>
             <textarea className="form-control" value={text} onChange={textBox} id="text" rows="8" placeholder='Type or paste your content here'></textarea>
         </div>
-        <div className='container'>
+        <div className='container my-2'>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={upperTxt}>Upper Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={lowerTxt}>Lower Case</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={senTxt}>Sentence Case</button>
