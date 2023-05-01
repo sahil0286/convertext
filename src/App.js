@@ -3,13 +3,13 @@ import './App.css';
 import Ad1 from './components/Ad1';
 import Footer from './components/Footer';
 import Inputarea from './components/Inputarea';
-import Inputbox from './components/Inputbox';
+import Reverse from './components/Reverse';
 import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
-        <Navbar title="converText" sbTitle1="Small Text Generator"/>
+        <Navbar title="converText" sbTitle1="Reverse Text Generator"/>
         <Routes>
           <Route path='/' element=
           {
@@ -22,7 +22,7 @@ function App() {
           <Route path='/smalltextgenerator' element=
           {
             <div>
-              <Inputbox inpHeading="Small Text Generator" inpSubHeading="This small text generator is a handy online tool, where you can convert standard text (whether that’s capitals, small letters and more) into tiny text. The tiny text options are ‘small caps’ and ‘superscript’. Find out how to use the tiny text generator below." btName="Convert To Small Text"/>
+              <Reverse inpHeading="Backwards Text Generator" inpSubHeading="Normal front facing text to backwards text. A simple online backward text generator tool that allows you to switch the way your text is facing. Simply write or paste the text in the left column and see it get converted in the right." btName="Convert Text In Reverse" />
               <Ad1 ad1="https://global-uploads.webflow.com/5f6cc9cd16d59d990c8fca33/61d30ac833d72078f141fb47_team-seas-raised-30-million-come-back.jpg" ad2="https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2022/01/rsz_191026-theoceancleanup_malaysia-1099294.jpg"/>
               <Footer/>
             </div>

@@ -1,6 +1,6 @@
 import React ,{useState} from 'react'
 
-export default function Inputarea(props) {
+export default function Reverse(props) {
   const [text, setText] = useState("")
 
   const textBox=(event)=>
@@ -10,7 +10,7 @@ export default function Inputarea(props) {
 
   const upperTxt=()=>
   {
-    setText(text.toUpperCase())
+    setText(text.split('').reverse().join(''))
   }
 
   const clrText=()=> {
@@ -57,7 +57,7 @@ export default function Inputarea(props) {
   )
 }
 
-Inputarea.defaultProps = {
+Reverse.defaultProps = {
     inpHeading:"Update Input area Heading",
     inpSubHeading:"Update Input area Sub-Heading",
     btName:"Update Button Name",
