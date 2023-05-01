@@ -3,7 +3,7 @@ import React from 'react'
 export default function Ad1(props) {
   return (
     <>  
-        <div className='container my-2' style={{height:"250px"}}>
+        <div className='container my-4' style={{height:"250px"}}>
             <a href="https://teamseas.org/" className=' card rounded float-start'>
                 <img style={{height:"250px"}} src={props.ad1} className="rounded" alt="Ad_No_1"/>
                 <div className="card-img-overlay">
