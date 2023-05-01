@@ -9,9 +9,7 @@ export default function Smalltext() {
     setText(event.target.value)
     setOut(text.toLowerCase())
   }
-    const x=()=>
-  {
-  }
+    const x=()=>{}
 
     return (
     <>
