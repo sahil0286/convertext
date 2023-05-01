@@ -61,16 +61,7 @@ export default function Inputarea(props) {
     document.execCommand("copy");
     document.body.removeChild(input);
   }
-
-  const titTxt=()=> {
-    setText(text.replace(/\w\S*/g, function(txt){
-      if(['a', 'an', 'the', 'and', 'in', 'on'].includes(txt.toLowerCase())){
-        return txt.toLowerCase();
-      }else{
-        return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
-      }
-    }));
-  }
+  
   const downTxt=()=> {
     const element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -82,6 +73,15 @@ export default function Inputarea(props) {
     element.click();
 
     document.body.removeChild(element);
+  }
+  const titTxt=()=> {
+    setText(text.replace(/\w\S*/g, function(txt){
+      if(['a', 'an', 'the', 'and', 'in', 'on'].includes(txt.toLowerCase())){
+        return txt.toLowerCase();
+      }else{
+        return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
+      }
+    }));
   }
 
     return (
