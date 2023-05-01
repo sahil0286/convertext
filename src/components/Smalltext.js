@@ -7,7 +7,14 @@ export default function Smalltext() {
     const textBox=(event)=>
   {
     setText(event.target.value)
-    setOut(text.toLowerCase())
+    if(event.target.value.length===0)
+    {
+        setOut("")
+    }
+    else
+    {
+        setOut(text.toLowerCase())
+    }
   }
     const x=()=>{}
 
@@ -15,7 +22,7 @@ export default function Smalltext() {
     <>
         <div className="container input-group mb-3 mt-3">
             <textarea className="form-control" value={text} id="text" rows="8" onChange={textBox} placeholder='Type or paste your content here'></textarea>
-            <textarea className="form-control" value={out} id="out" onChange={x} rows="8" placeholder='Type or paste your content here'></textarea>
+            <textarea className="form-control" value={out} id="out" onChange={x} rows="8" placeholder='Output'></textarea>
         </div>
     </>
   )
