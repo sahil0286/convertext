@@ -1,6 +1,6 @@
 import React ,{useState} from 'react'
 
-export default function Upsidedown(props) {
+export default function Binary(props) {
   const [text, setText] = useState("")
 
   const textBox=(event)=>
@@ -8,9 +8,15 @@ export default function Upsidedown(props) {
     setText(event.target.value)
   }
 
-  const upperTxt=()=>
+  const binaryf=()=>
   {
-    setText(text.split('').reverse().join(''))
+    let binary = '';
+  for (let i = 0; i < text.length; i++) {
+    const charCode = text.charCodeAt(i);
+    const binaryCode = charCode.toString(2);
+    binary += binaryCode.padStart(8, '0') + ' '; // Pad with zeros and add a space
+  }
+    setText(binary.trim())
   }
 
   const clrText=()=> {
@@ -47,7 +53,7 @@ export default function Upsidedown(props) {
             <textarea className="form-control" value={text} onChange={textBox} id="text" rows="8" placeholder='Type or paste your content here'></textarea>
         </div>
         <div className='container text-center my-2'>
-            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={upperTxt}>{props.btName}</button>
+            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={binaryf}>{props.btName}</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={downTxt}>Download Text</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={copyTxt}>Copy to Clipboard</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={clrText}>Clear </button>
@@ -57,7 +63,7 @@ export default function Upsidedown(props) {
   )
 }
 
-Upsidedown.defaultProps = {
+Binary.defaultProps = {
     inpHeading:"Update Input area Heading",
     inpSubHeading:"Update Input area Sub-Heading",
     btName:"Update Button Name",

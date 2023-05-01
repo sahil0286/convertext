@@ -13,20 +13,20 @@ export default function Navbar(props) {
                     </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
+                        <li className="nav-item mx-2">
                             <Link className='nav-link' to="/smalltextgenerator">{props.sbTitle1}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/a">{props.sbTitle2}</Link>
+                            <Link className="nav-link mx-1.5" to="/morsecode">{props.sbTitle2}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">{props.sbTitle3}</Link>
+                            <Link className="nav-link mx-1.5" to="/binary">{props.sbTitle3}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">{props.sbTitle4}</Link>
+                            <Link className="nav-link mx-1.5" to="/alternating">{props.sbTitle4}</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">{props.sbTitle5}</Link>
+                            <Link className="nav-link mx-1.5" to="/">{props.sbTitle5}</Link>
                         </li>
                     </ul>
                     <div className="form-check form-switch">
