@@ -88,7 +88,7 @@ export default function Inputarea(props) {
     <div className='container mt-2'>
         <h3>{props.inpHeading}</h3>
         <a href="https://teamseas.org/" className=' card rounded float-center'>
-                <img style={{height:"50px" ,width:"100px"}} src={props.ad2} className="rounded" alt="Ad_No_2"/>
+                <img style={{height:"70px" }} src={"https://static.vecteezy.com/system/resources/thumbnails/017/457/648/small/business-webinar-horizontal-banner-template-design-very-suitable-for-online-class-programs-marketing-etc-vector.jpg"} className="rounded" alt="Ad_No_2"/>
                 <div className="card-img-overlay">
                     <h5 className="card-title">AD</h5>
                 </div>
