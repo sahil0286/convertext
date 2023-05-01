@@ -87,6 +87,12 @@ export default function Inputarea(props) {
     return (
     <div className='container mt-2'>
         <h3>{props.inpHeading}</h3>
+        <a href="https://teamseas.org/" className=' card rounded float-center'>
+                <img style={{height:"50px"}} src={props.ad2} className="rounded" alt="Ad_No_2"/>
+                <div className="card-img-overlay">
+                    <h5 className="card-title">AD</h5>
+                </div>
+            </a>
         <div className="mb-3">
             <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.inpSubHeading}</label>
             <textarea className="form-control" value={text} onChange={textBox} id="text" rows="8" placeholder='Type or paste your content here'></textarea>
