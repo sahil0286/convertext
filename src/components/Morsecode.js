@@ -1,6 +1,6 @@
 import React ,{useState} from 'react'
 
-export default function Inputarea(props) {
+export default function Morsecode(props) {
   const [text, setText] = useState("")
 
   const textBox=(event)=>
@@ -8,34 +8,74 @@ export default function Inputarea(props) {
     setText(event.target.value)
   }
 
-  const upperTxt=()=>
+  const updown=()=>
   {
-    setText(text.toUpperCase())
-  }
-
-  const lowerTxt=()=> {
-    setText(text.toLowerCase())
-  }
-  const senTxt=()=> {
-    setText(text[0].toUpperCase()+text.slice(1))
-  }
-  const capTxt=()=> {
-    setText(text.toLowerCase().split(' ').map(function(word) {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      }).join(' '));
-  }
-
-  const inTxt=()=> {
-    var result = "";
-  for (var i = 0; i < text.length; i++) {
-    var char = text.charAt(i);
-    if (char === char.toUpperCase()) {
-      result += char.toLowerCase();
-    } else {
-      result += char.toUpperCase();
-    }
-  }
-    setText(result);
+    const morseCodeMap = {
+        'A': '.-', 
+        'B': '-...', 
+        'C': '-.-.', 
+        'D': '-..', 
+        'E': '.', 
+        'F': '..-.', 
+        'G': '--.', 
+        'H': '....', 
+        'I': '..', 
+        'J': '.---', 
+        'K': '-.-', 
+        'L': '.-..', 
+        'M': '--', 
+        'N': '-.', 
+        'O': '---', 
+        'P': '.--.', 
+        'Q': '--.-', 
+        'R': '.-.', 
+        'S': '...', 
+        'T': '-', 
+        'U': '..-', 
+        'V': '...-', 
+        'W': '.--', 
+        'X': '-..-', 
+        'Y': '-.--', 
+        'Z': '--..', 
+        '0': '-----', 
+        '1': '.----', 
+        '2': '..---', 
+        '3': '...--', 
+        '4': '....-', 
+        '5': '.....', 
+        '6': '-....', 
+        '7': '--...', 
+        '8': '---..', 
+        '9': '----.',
+        '.': '.-.-.-',
+        ',': '--..--',
+        '?': '..--..',
+        '\'': '.----.',
+        '!': '-.-.--',
+        '/': '-..-.',
+        '(': '-.--.',
+        ')': '-.--.-',
+        '&': '.-...',
+        ':': '---...',
+        ';': '-.-.-.',
+        '=': '-...-',
+        '+': '.-.-.',
+        '-': '-....-',
+        '_': '..--.-',
+        '$': '...-..-',
+        '@': '.--.-.'
+      };
+      
+      const words = text.trim().split(' ');
+      const translatedWords = words.map((word) => {
+        const chars = word.split('');
+        const translatedChars = chars.map((char) => {
+          const morseCode = morseCodeMap[char.toUpperCase()];
+          return morseCode !== undefined ? morseCode : '';
+        });
+        return translatedChars.join(' ');
+      });
+    setText(translatedWords.join(' / '))
   }
 
   const clrText=()=> {
@@ -63,17 +103,7 @@ export default function Inputarea(props) {
 
     document.body.removeChild(element);
   }
-
-  const titTxt=()=> {
-    setText(text.replace(/\w\S*/g, function(txt){
-      if(['a', 'an', 'the', 'and', 'in', 'on'].includes(txt.toLowerCase())){
-        return txt.toLowerCase();
-      }else{
-        return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
-      }
-    }));
-  }
-
+  
     return (
     <div className='container mt-2'>
         <h3>{props.inpHeading}</h3>
@@ -82,12 +112,7 @@ export default function Inputarea(props) {
             <textarea className="form-control" value={text} onChange={textBox} id="text" rows="8" placeholder='Type or paste your content here'></textarea>
         </div>
         <div className='container text-center my-2'>
-            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={upperTxt}>Upper Case</button>
-            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={lowerTxt}>Lower Case</button>
-            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={senTxt}>Sentence Case</button>
-            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={capTxt}>Capitalize Case</button>
-            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={inTxt}>InVeRsE CaSe</button>
-            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={titTxt}>Title Case</button>
+            <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={updown}>{props.btName}</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={downTxt}>Download Text</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={copyTxt}>Copy to Clipboard</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={clrText}>Clear </button>
@@ -97,7 +122,8 @@ export default function Inputarea(props) {
   )
 }
 
-Inputarea.defaultProps = {
+Morsecode.defaultProps = {
     inpHeading:"Update Input area Heading",
     inpSubHeading:"Update Input area Sub-Heading",
+    btName:"Update Button Name",
 }
