@@ -87,12 +87,6 @@ export default function Inputarea(props) {
     return (
     <div className='container mt-2'>
         <h3>{props.inpHeading}</h3>
-        <a href="https://teamseas.org/" style={{height:"70px", width:"200px"}} className=' card rounded float-center'>
-                <img style={{height:"70px" }} src={"https://www.vectorstock.com/royalty-free-vector/merry-christmas-and-happy-new-year-background-vector-33256122"} className="rounded" alt="Ad_No_2"/>
-                <div className="card-img-overlay">
-                    <h5 className="card-title">AD</h5>
-                </div>
-            </a>
         <div className="mb-3">
             <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.inpSubHeading}</label>
             <textarea className="form-control" value={text} onChange={textBox} id="text" rows="8" placeholder='Type or paste your content here'></textarea>
@@ -109,7 +103,7 @@ export default function Inputarea(props) {
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={copyTxt}>Copy to Clipboard</button>
             <button type="button" className="btn btn-secondary btn-sm my-2 mx-2" onClick={clrText}>Clear </button>
         </div>
-        <p>Character Count: {text.length} | Word Count: {text.split(/\s+/).filter(word => word !== '').length} | Line Count: {text.split(/\r\n|\r|\n/).length}</p>
+        <h5>Character Count: {text.length} | Word Count: {text.split(/\s+/).filter(word => word !== '').length} | Line Count: {text.split(/\r\n|\r|\n/).length}</h5>
     </div>
   )
 }
