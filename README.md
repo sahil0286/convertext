@@ -36,7 +36,33 @@ To use the ConverText application, follow these steps:
 
 ## Screenshot
 
+![c1](https://github.com/sahil0286/convertext/assets/119412630/16e49c3d-db5c-43b2-b1d3-f8c0c7ee7857)
 
+![c2](https://github.com/sahil0286/convertext/assets/119412630/140f9a26-a37a-4ea6-8003-9ca725d4dd37)
+
+![c3](https://github.com/sahil0286/convertext/assets/119412630/f4dc440c-b24e-46c7-bb70-39b8ead0f19e)
+
+![c4](https://github.com/sahil0286/convertext/assets/119412630/d14b9a31-c894-469a-91d9-cfac34046789)
+
+![c5](https://github.com/sahil0286/convertext/assets/119412630/1c314812-4c7d-4875-82c2-bb2a0d7b5bbb)
+
+![c6](https://github.com/sahil0286/convertext/assets/119412630/1988a69b-4887-464c-976a-eee56e34f2e5)
+
+![c7](https://github.com/sahil0286/convertext/assets/119412630/9e8b7081-f9b4-41fd-9374-3d1c560da7bc)
+
+![c8](https://github.com/sahil0286/convertext/assets/119412630/b0ef1426-1f84-4ec7-b4ad-9609e0ac24e8)
+
+![c9](https://github.com/sahil0286/convertext/assets/119412630/037cb9af-1655-4856-b699-83154f1e9e36)
+
+![c10](https://github.com/sahil0286/convertext/assets/119412630/b93a4ec6-8b4c-499b-b592-075e831663cf)
+
+![c11](https://github.com/sahil0286/convertext/assets/119412630/dff9ef51-7585-4db6-a9cb-c87a2cc4f929)
+
+![c12](https://github.com/sahil0286/convertext/assets/119412630/b828363d-d9fd-408a-b65d-07fe15b83833)
+
+![c13](https://github.com/sahil0286/convertext/assets/119412630/746cab3d-2f4c-4802-b579-6874472c599c)
+
+![c14](https://github.com/sahil0286/convertext/assets/119412630/d7ea27e6-a1b0-42be-ac94-751fe6ce3202)
 
 ## Technologies Used
 
