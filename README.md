@@ -6,8 +6,8 @@ ConverText is a simple web application built with React and Bootstrap that allow
 
 - Convert to Upper case: Converts the text to uppercase.
 - Convert to Lower case: Converts the text to lowercase.
-- Convert to Sentence Case: Converts the text to lowercase.
-- Capitalize Case: Capitalizes the only first letter in the text.
+- Convert to Sentence Case: Capitalizes the only first letter in the text.
+- Capitalize Case: Capitalizes the first letter of each word in the text.
 - InVeRsE Case: InVeRsE the order of characters in the text.
 - Convert to Title Case: Capitalizes the first letter of each word in the text.
 - Count Characters: Counts the number of characters in the text.
