@@ -1,6 +1,6 @@
 # ConverText
 
-ConverText is a simple web application built with React and Bootstrap that allows you to convert text between different formats.
+ConverText is a web application built with React and Bootstrap that allows you to convert text between different formats.
 
 ## Features
 
