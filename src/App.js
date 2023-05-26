@@ -19,10 +19,14 @@ function App() {
     if(mode==="light"){
       setMode("secondary")
       setTcolor("white")
+      document.body.style.backgroundColor="black"
+      document.body.style.color="white"
     }
     else{
       setMode("light")
       setTcolor("black")
+      document.body.style.backgroundColor="white"
+      document.body.style.color="black"
     }
   }
 
