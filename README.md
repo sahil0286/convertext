@@ -22,18 +22,6 @@ ConverText is a web application built with React and Bootstrap that allows you t
 - Online Notepad: Online free notepad.
 - Mode: Mode will change background in Dark mode and Light mode.
 
-## Getting Started
-
-To use the ConverText application, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/sahil0286/convertext.git`
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
-4. Open your web browser and navigate to `http://localhost:3000`.
-5. Enter the text you want to convert in the input box.
-6. Select the desired conversion option from the available buttons.
-7. View the converted text in the Inpute area.
-
 ## Screenshot
 
 ![c1](https://github.com/sahil0286/convertext/assets/119412630/16e49c3d-db5c-43b2-b1d3-f8c0c7ee7857)
@@ -63,6 +51,18 @@ To use the ConverText application, follow these steps:
 ![c13](https://github.com/sahil0286/convertext/assets/119412630/746cab3d-2f4c-4802-b579-6874472c599c)
 
 ![c14](https://github.com/sahil0286/convertext/assets/119412630/d7ea27e6-a1b0-42be-ac94-751fe6ce3202)
+
+## Getting Started
+
+To use the ConverText application, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/sahil0286/convertext.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open your web browser and navigate to `http://localhost:3000`.
+5. Enter the text you want to convert in the input box.
+6. Select the desired conversion option from the available buttons.
+7. View the converted text in the Inpute area.
 
 ## Technologies Used
 
