@@ -24,33 +24,33 @@ ConverText is a web application built with React and Bootstrap that allows you t
 
 ## Screenshot
 
-![c1](https://github.com/sahil0286/convertext/assets/119412630/16e49c3d-db5c-43b2-b1d3-f8c0c7ee7857)
+![c1](https://github.com/sahil0286/convertext/assets/119412630/4b8d773c-095b-43ed-b4df-6561f95a4525)
 
-![c2](https://github.com/sahil0286/convertext/assets/119412630/140f9a26-a37a-4ea6-8003-9ca725d4dd37)
+![c2](https://github.com/sahil0286/convertext/assets/119412630/c48b483a-3419-48a2-a9ed-f5a5baad4b28)
 
-![c3](https://github.com/sahil0286/convertext/assets/119412630/f4dc440c-b24e-46c7-bb70-39b8ead0f19e)
+![c3](https://github.com/sahil0286/convertext/assets/119412630/a75bdeb6-acad-4a76-b6c2-892eea8ed279)
 
-![c4](https://github.com/sahil0286/convertext/assets/119412630/d14b9a31-c894-469a-91d9-cfac34046789)
+![c4](https://github.com/sahil0286/convertext/assets/119412630/52ff871d-4b17-405c-bd62-ad3c68df4f46)
 
-![c5](https://github.com/sahil0286/convertext/assets/119412630/1c314812-4c7d-4875-82c2-bb2a0d7b5bbb)
+![c5](https://github.com/sahil0286/convertext/assets/119412630/8086832c-1033-451c-a1db-9e3293567550)
 
-![c6](https://github.com/sahil0286/convertext/assets/119412630/1988a69b-4887-464c-976a-eee56e34f2e5)
+![c6](https://github.com/sahil0286/convertext/assets/119412630/c6ac40c0-32d8-4b02-b4a6-2aa9ed3a6407)
 
-![c7](https://github.com/sahil0286/convertext/assets/119412630/9e8b7081-f9b4-41fd-9374-3d1c560da7bc)
+![c7](https://github.com/sahil0286/convertext/assets/119412630/418f9530-73a6-4584-b2df-7f132d0943cc)
 
-![c8](https://github.com/sahil0286/convertext/assets/119412630/b0ef1426-1f84-4ec7-b4ad-9609e0ac24e8)
+![c8](https://github.com/sahil0286/convertext/assets/119412630/b958ca4c-0332-4691-9138-a51080694aca)
 
-![c9](https://github.com/sahil0286/convertext/assets/119412630/037cb9af-1655-4856-b699-83154f1e9e36)
+![c9](https://github.com/sahil0286/convertext/assets/119412630/c4c2b86b-2c4e-4433-9c62-73cd03cd731d)
 
-![c10](https://github.com/sahil0286/convertext/assets/119412630/b93a4ec6-8b4c-499b-b592-075e831663cf)
+![c10](https://github.com/sahil0286/convertext/assets/119412630/db66db2f-c94f-4d13-a8a6-5dbdfdbf6886)
 
-![c11](https://github.com/sahil0286/convertext/assets/119412630/dff9ef51-7585-4db6-a9cb-c87a2cc4f929)
+![c11](https://github.com/sahil0286/convertext/assets/119412630/7c722117-162c-4bdf-824b-a973adba994b)
 
-![c12](https://github.com/sahil0286/convertext/assets/119412630/b828363d-d9fd-408a-b65d-07fe15b83833)
+![c12](https://github.com/sahil0286/convertext/assets/119412630/0ef578a9-7a82-44e7-ad1e-46baeda5b314)
 
-![c13](https://github.com/sahil0286/convertext/assets/119412630/746cab3d-2f4c-4802-b579-6874472c599c)
+![c13](https://github.com/sahil0286/convertext/assets/119412630/0bfb5037-d0f5-4b2d-a2e3-d0250852a3b1)
 
-![c14](https://github.com/sahil0286/convertext/assets/119412630/d7ea27e6-a1b0-42be-ac94-751fe6ce3202)
+![c14](https://github.com/sahil0286/convertext/assets/119412630/b1f6cb84-7f60-4e37-9416-3a3e76b6c6e6)
 
 ## Getting Started
 
